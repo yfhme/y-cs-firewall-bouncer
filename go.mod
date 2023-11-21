@@ -1,9 +1,11 @@
 module github.com/crowdsecurity/cs-firewall-bouncer
 
-go 1.20
+go 1.21
+
+toolchain go1.21.4
 
 require (
-	github.com/crowdsecurity/crowdsec v1.5.4-final
+	github.com/crowdsecurity/crowdsec v1.5.5
 	github.com/crowdsecurity/go-cs-bouncer v0.0.11
 	github.com/crowdsecurity/go-cs-lib v0.0.4
 	github.com/google/nftables v0.1.1-0.20230710063801-8a10f689006b
