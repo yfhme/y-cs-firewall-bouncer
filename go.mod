@@ -4,7 +4,7 @@ go 1.21
 
 require (
 	github.com/crowdsecurity/crowdsec v1.5.5
-	github.com/crowdsecurity/go-cs-bouncer v0.0.12
+	github.com/crowdsecurity/go-cs-bouncer v0.0.13
 	github.com/crowdsecurity/go-cs-lib v0.0.5
 	github.com/google/nftables v0.1.1-0.20231024065723-32bfbb662717
 	github.com/prometheus/client_golang v1.17.0
