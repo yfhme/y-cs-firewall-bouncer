@@ -4,14 +4,14 @@ go 1.21
 
 require (
 	github.com/crowdsecurity/crowdsec v1.5.5
-	github.com/crowdsecurity/go-cs-bouncer v0.0.12
+	github.com/crowdsecurity/go-cs-bouncer v0.0.13
 	github.com/crowdsecurity/go-cs-lib v0.0.5
-	github.com/google/nftables v0.1.1-0.20231024065723-32bfbb662717
+	github.com/google/nftables v0.1.1-0.20230710063801-8a10f689006b
 	github.com/prometheus/client_golang v1.17.0
 	github.com/sirupsen/logrus v1.9.3
-	golang.org/x/exp v0.0.0-20231206192017-f3f8817b8deb
-	golang.org/x/sync v0.5.0
-	golang.org/x/sys v0.15.0
+	golang.org/x/exp v0.0.0-20230522175609-2e198f4a06a1
+	golang.org/x/sync v0.3.0
+	golang.org/x/sys v0.13.0
 	gopkg.in/natefinch/lumberjack.v2 v2.2.1
 	gopkg.in/yaml.v2 v2.4.0
 )
@@ -33,7 +33,6 @@ require (
 	github.com/go-openapi/swag v0.22.4 // indirect
 	github.com/go-openapi/validate v0.22.1 // indirect
 	github.com/goccy/go-yaml v1.11.2 // indirect
-	github.com/golang/protobuf v1.5.3 // indirect
 	github.com/google/go-cmp v0.5.9 // indirect
 	github.com/google/go-querystring v1.1.0 // indirect
 	github.com/josharian/intern v1.0.0 // indirect
@@ -41,7 +40,6 @@ require (
 	github.com/mailru/easyjson v0.7.7 // indirect
 	github.com/mattn/go-colorable v0.1.13 // indirect
 	github.com/mattn/go-isatty v0.0.20 // indirect
-	github.com/matttproud/golang_protobuf_extensions v1.0.4 // indirect
 	github.com/matttproud/golang_protobuf_extensions/v2 v2.0.0 // indirect
 	github.com/mdlayher/netlink v1.7.1 // indirect
 	github.com/mdlayher/socket v0.4.0 // indirect
