@@ -6,7 +6,7 @@ require (
 	github.com/crowdsecurity/crowdsec v1.5.5
 	github.com/crowdsecurity/go-cs-bouncer v0.0.13
 	github.com/crowdsecurity/go-cs-lib v0.0.5
-	github.com/google/nftables v0.1.1-0.20230710063801-8a10f689006b
+	github.com/google/nftables v0.1.1-0.20240112203004-33ee8df9d8e2
 	github.com/prometheus/client_golang v1.18.0
 	github.com/sirupsen/logrus v1.9.3
 	golang.org/x/exp v0.0.0-20231214170342-aacd6d4b4611
