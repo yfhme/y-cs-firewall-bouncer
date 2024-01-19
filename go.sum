@@ -109,6 +109,8 @@ github.com/google/nftables v0.1.1-0.20230710063801-8a10f689006b h1:efO6FAh/47nbH
 github.com/google/nftables v0.1.1-0.20230710063801-8a10f689006b/go.mod h1:7OLL+86wZKfBnAJxNxmdcZ0ebbgdp/A28fcagx9oJqA=
 github.com/google/nftables v0.1.1-0.20231024065723-32bfbb662717 h1:U0bCHvg4y7uTBQWiyE5iOC/R3Dw9Dve1TjIok0BfkbQ=
 github.com/google/nftables v0.1.1-0.20231024065723-32bfbb662717/go.mod h1:FODgEv85GcCEyoUYZ27mPWQBSU1f67bzgNu2IITA9k8=
+github.com/google/nftables v0.1.1-0.20240112203004-33ee8df9d8e2 h1:G2RS+WwzoAixmpV1r6GxQL6XAjPBUiXo/71tNF1JvzE=
+github.com/google/nftables v0.1.1-0.20240112203004-33ee8df9d8e2/go.mod h1:KxupCGmcgEI3TVOAQE6vzfdSAHDQhDf4Cl5GpnneEzg=
 github.com/google/uuid v1.1.1/go.mod h1:TIyPZe4MgqvfeYDBFedMoGGpEw/LqOeaOT+nhxU+yHo=
 github.com/google/uuid v1.3.0 h1:t6JiXgmwXMjEs8VusXIJk2BXHsn+wx8BZdTaoZ5fu7I=
 github.com/google/uuid v1.3.0/go.mod h1:TIyPZe4MgqvfeYDBFedMoGGpEw/LqOeaOT+nhxU+yHo=
