@@ -122,7 +122,7 @@ install_bouncer() {
     install -D -m 0600 "./config/$CONFIG_FILE" "$CONFIG"
     # shellcheck disable=SC2016
     CFG=${CONFIG_DIR} BIN=${BIN_PATH_INSTALLED} envsubst '$CFG $BIN' <"./config/$SERVICE" >"$SYSTEMD_PATH_FILE"
-    systemctl daemon-reload
+    #systemctl daemon-reload
     gen_apikey
     gen_config_file
     set_local_port
@@ -132,12 +132,12 @@ install_bouncer() {
 
 install_bouncer
 
-systemctl enable "$SERVICE"
-if [ "$READY" = "yes" ]; then
-    systemctl start "$SERVICE"
-else
-    msg warn "service not started. You need to get an API key and configure it in $CONFIG"
-fi
+#systemctl enable "$SERVICE"
+#if [ "$READY" = "yes" ]; then
+#    systemctl start "$SERVICE"
+#else
+#    msg warn "service not started. You need to get an API key and configure it in $CONFIG"
+#fi
 
 msg succ "The $BOUNCER service has been installed."
 exit 0
