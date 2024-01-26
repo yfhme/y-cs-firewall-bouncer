@@ -1,8 +1,13 @@
 {
     "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-    "extends": [ "config:recommended" ],
+    "baseBranches": [
+      "dev"
+    ],
+    "prConcurrentLimit": 1,
+    "extends": [
+      "github>yfhme/renovate-config"
+    ],
     "dependencyDashboard": true,
     "forkProcessing": "enabled",
-    "prHourlyLimit": 0,
     "minimumReleaseAge": "7 days"
  }

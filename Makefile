@@ -113,6 +113,7 @@ tarball: binary
 	@cp $(BINARY_NAME) $(RELDIR)/
 	@cp -R ./config $(RELDIR)/
 	@cp ./scripts/install.sh $(RELDIR)/
+	@cp ./scripts/install-docker.sh $(RELDIR)/
 	@cp ./scripts/uninstall.sh $(RELDIR)/
 	@cp ./scripts/upgrade.sh $(RELDIR)/
 	@cp ./scripts/_bouncer.sh $(RELDIR)/scripts/
