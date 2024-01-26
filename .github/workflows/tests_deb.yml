@@ -2,9 +2,19 @@ name: Test .deb packaging
 
 on:
   push:
-    branches: [ main ]
+    branches:
+      - dev
+    paths-ignore:
+      - "docs/**"
+      - ".github/**"
+      - "./renovate.json"
   pull_request:
-    branches: [ main ]
+    branches:
+      - main
+      - dev
+    paths-ignore:
+      - "docs/**"
+      - "./renovate.json"
 
 permissions:
   contents: read
