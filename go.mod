@@ -10,7 +10,7 @@ require (
 	github.com/prometheus/client_golang v1.18.0
 	github.com/sirupsen/logrus v1.9.3
 	github.com/stretchr/testify v1.8.4
-	golang.org/x/exp v0.0.0-20240119083558-1b970713d09a
+	golang.org/x/exp v0.0.0-20240205201215-2c58cdc269a3
 	golang.org/x/sync v0.6.0
 	golang.org/x/sys v0.16.0
 	gopkg.in/natefinch/lumberjack.v2 v2.2.1
