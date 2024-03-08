@@ -48,7 +48,6 @@ require (
 	github.com/mdlayher/socket v0.4.0 // indirect
 	github.com/mitchellh/mapstructure v1.5.0 // indirect
 	github.com/oklog/ulid v1.3.1 // indirect
-	github.com/pkg/errors v0.9.1 // indirect
 	github.com/pmezard/go-difflib v1.0.0 // indirect
 	github.com/prometheus/client_model v0.5.0 // indirect
 	github.com/prometheus/common v0.45.0 // indirect
@@ -60,7 +59,3 @@ require (
 	gopkg.in/tomb.v2 v2.0.0-20161208151619-d5d1b5820637 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
-
-exclude github.com/mattn/go-sqlite3 v2.0.3+incompatible
-
-exclude github.com/mattn/go-sqlite3 v2.0.1+incompatible
