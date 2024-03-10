@@ -256,7 +256,7 @@ func Execute() error {
 		}
 	}
 
-	_ = csdaemon.Notify(log.StandardLogger())
+	_ = csdaemon.Notify(Ready, log.StandardLogger())
 
 	g.Go(func() error {
 		return HandleSignals(ctx)
