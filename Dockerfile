@@ -13,6 +13,8 @@ COPY crowdsec-firewall-bouncer-linux-$TARGETARCH.tgz /tmp/src/
 WORKDIR /tmp/src
 
 RUN set -x && \
+  ls -al &&\
+  ls -al /tmp/src
   apt-get update && \
   apt-get purge -y --auto-remove nftables && \
   apt-get upgrade -y && \
