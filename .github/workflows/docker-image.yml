@@ -46,10 +46,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4.1.1
 
-      - name: Get Version
+      - name: Get Build Version
         run: |
-          BUILD_VERSION=$(shell git describe --tags)
-          echo $BUILD_VERSION
+          BUILD_VERSION=$(git describe --tags)
 
       - name: Docker meta
         id: meta
@@ -74,6 +73,7 @@ jobs:
         with:
           context: .
           load: true
+          buildArgs: BUILD_VERSION=$BUILD_VERSION
           tags: ${{ env.TEST_TAG }}
 
       - name: Test container

@@ -2,6 +2,7 @@ FROM debian:bookworm-20240311-slim
 
 ARG DEBIAN_FRONTEND=noninteractive
 ARG TARGETARCH
+ARG BUILD_VERSION=local
 
 # renovate: datasource=github-tags depName=yfhme/y-cs-firewall-bouncer
 ENV FW_BOUNCER_VERSION=v0.0.29-rc1b
