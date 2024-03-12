@@ -15,6 +15,7 @@ WORKDIR /tmp/src
 RUN set -x && \
   ls -al && \
   ls -al /tmp/src && \
+  echo $BUILD_VERSION && \
   apt-get update && \
   apt-get purge -y --auto-remove nftables && \
   apt-get upgrade -y && \
@@ -22,8 +23,8 @@ RUN set -x && \
   gettext \
   ipset \
   iptables && \
-  #tar xzvf crowdsec-firewall-bouncer-linux-$TARGETARCH.tgz && \
-  #rm -f crowdsec-firewall-bouncer-linux-$TARGETARCH.tgz && \
+  tar xzvf crowdsec-firewall-bouncer-linux-$TARGETARCH.tgz && \
+  rm -f crowdsec-firewall-bouncer-linux-$TARGETARCH.tgz && \
   cd crowdsec-firewall-bouncer-$BUILD_VERSION && \
   ./install-docker.sh && \
   apt-get purge -y --auto-remove && \
