@@ -73,9 +73,9 @@ jobs:
         run: |
           ls -al
 
-      - name: Get Build Version
-        run: |
-          BUILD_VERSION=$(git describe --tags)
+      #- name: Get Build Version
+      #  run: |
+      #    BUILD_VERSION=$(git describe --tags)
 
       - name: Docker meta
         id: meta
@@ -100,7 +100,7 @@ jobs:
         with:
           context: .
           load: true
-          build-args: BUILD_VERSION=$BUILD_VERSION
+          #build-args: BUILD_VERSION=$BUILD_VERSION
           tags: ${{ env.TEST_TAG }}
 
       - name: Test container
