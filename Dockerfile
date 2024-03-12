@@ -21,7 +21,7 @@ RUN set -x && \
   iptables && \
   #tar xzvf crowdsec-firewall-bouncer-linux-$TARGETARCH.tgz && \
   #rm -f crowdsec-firewall-bouncer-linux-$TARGETARCH.tgz && \
-  cd crowdsec-firewall-bouncer && \
+  cd crowdsec-firewall-bouncer-$BUILD_VERSION && \
   ./install-docker.sh && \
   apt-get purge -y --auto-remove && \
   rm -rf \
