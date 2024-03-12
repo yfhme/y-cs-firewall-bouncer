@@ -91,7 +91,7 @@ func-tests: build
 # Build release tarballs
 #
 
-RELDIR = $(BINARY_NAME)-$(BUILD_VERSION)
+RELDIR = $(BINARY_NAME)
 
 .PHONY: vendor
 vendor: vendor-remove

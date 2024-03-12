@@ -9,5 +9,11 @@
     ],
     "dependencyDashboard": true,
     "forkProcessing": "enabled",
-    "minimumReleaseAge": "7 days"
+    "minimumReleaseAge": "7 days",
+    "packageRules": [
+      {
+        "matchPackageNames": ["debian"],
+        "versioning": "regex:^bookworm-(?<major>\\d{4})(?<minor>\\d{2})(?<patch>\\d{2})-(?<compatibility>.*)$"
+      }
+    ]
  }
