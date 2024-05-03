@@ -1,4 +1,4 @@
-FROM debian:bookworm-20240311-slim
+FROM debian:bookworm-20240311-slim@sha256:ccb33c3ac5b02588fc1d9e4fc09b952e433d0c54d8618d0ee1afadf1f3cf2455
 
 ARG DEBIAN_FRONTEND=noninteractive
 ARG TARGETARCH
