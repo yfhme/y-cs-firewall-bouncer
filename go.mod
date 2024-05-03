@@ -8,11 +8,10 @@ require (
 	github.com/crowdsecurity/go-cs-lib v0.0.10
 	github.com/google/nftables v0.2.0
 	github.com/prometheus/client_golang v1.19.0
-	github.com/crowdsecurity/go-cs-lib v0.0.10
 	github.com/sirupsen/logrus v1.9.3
 	github.com/stretchr/testify v1.9.0
-	golang.org/x/exp v0.0.0-20240119083558-1b970713d09a
-	golang.org/x/sync v0.6.0
+	golang.org/x/exp v0.0.0-20240416160154-fe59bbe5cc7f
+	golang.org/x/sync v0.7.0
 	golang.org/x/sys v0.19.0
 	gopkg.in/natefinch/lumberjack.v2 v2.2.1
 	gopkg.in/yaml.v2 v2.4.0
