@@ -9,9 +9,10 @@ on:
       - "**/renovate.json"
     branches:
       - "main"
+      - "dev"
   workflow_dispatch:
-  #schedule:
-    #- cron: "0 1 * * 2"
+  schedule:
+    - cron: "0 1 * * 2"
 
 env:
   REGISTRY_IMAGE: yfhme/cs-firewall-bouncer-docker
@@ -23,42 +24,40 @@ jobs:
     name: Build and all platforms
     runs-on: ubuntu-latest
     steps:
+      - name: Check out repository
+        uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4.1.1
+        with:
+          fetch-depth: 0
 
-    - name: Check out repository
-      uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4.1.1
-      with:
-        fetch-depth: 0
+      - name: Check Dir
+        run: |
+          ls -al
 
-    - name: Check Dir
-      run: |
-        ls -al
+      - name: Set up Go
+        uses: actions/setup-go@0c52d547c9bc32b1aa3301fd7a9cb496313a4491 # v5
+        with:
+          go-version: 1.21.7
 
-    - name: Set up Go
-      uses: actions/setup-go@0c52d547c9bc32b1aa3301fd7a9cb496313a4491 # v5
-      with:
-        go-version: 1.21.7
+      - name: Build all platforms
+        run: |
+          # build platform-all first so the .xz vendor file is not removed
+          make platform-all vendor
 
-    - name: Build all platforms
-      run: |
-        # build platform-all first so the .xz vendor file is not removed
-        make platform-all vendor
+      - name: Check Dir
+        run: |
+          ls -al
 
-    - name: Check Dir
-      run: |
-        ls -al
+      - name: Upload Binary to Artifacts
+        uses: actions/upload-artifact@5d5d22a31266ced268874388b861e4b58bb5c2f3 # v4
+        with:
+          name: bin-files
+          path: crowdsec-*
+          overwrite: true
 
-    - name: Upload Binary to Artifacts
-      uses: actions/upload-artifact@5d5d22a31266ced268874388b861e4b58bb5c2f3 # v4
-      with:
-        name: bin-files
-        path: crowdsec-*
-        overwrite: true
-  
   docker:
     needs: build
     runs-on: ubuntu-latest
     steps:
-
       - name: Check out repository
         uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4.1.1
         with:
@@ -82,6 +81,12 @@ jobs:
         uses: docker/metadata-action@8e5442c4ef9f78752691e2d8f8d19755c6f78e81 # v5.5.1
         with:
           images: ${{ env.REGISTRY_IMAGE }}
+          tags: |
+            type=schedule,pattern=weekly
+            type=edge,branch=dev
+            type=ref,event=branch
+            type=ref,event=pr
+            type=semver,pattern={{version}}
 
       - name: Set up QEMU
         uses: docker/setup-qemu-action@68827325e0b33c7199eb31dd4e31fbe9023e06e3 # v3.0.0
