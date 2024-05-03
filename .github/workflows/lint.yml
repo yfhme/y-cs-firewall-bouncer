@@ -37,7 +37,7 @@ jobs:
           go-version: 1.21.9
 
       - name: Initialize CodeQL
-        uses: github/codeql-action/init@8a470fddafa5cbb6266ee11b37ef4d8aae19c571 # v3
+        uses: github/codeql-action/init@d39d31e687223d841ef683f52467bd88e9b21c14 # v3
         with:
           languages: go, python
 
@@ -57,4 +57,4 @@ jobs:
           skip-build-cache: true
 
       - name: Perform CodeQL Analysis
-        uses: github/codeql-action/analyze@8a470fddafa5cbb6266ee11b37ef4d8aae19c571 # v3
+        uses: github/codeql-action/analyze@d39d31e687223d841ef683f52467bd88e9b21c14 # v3
