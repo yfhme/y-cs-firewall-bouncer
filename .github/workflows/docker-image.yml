@@ -1,6 +1,7 @@
 name: docker build and push
 
 on:
+  merge_group:
   push:
     tags:
       - "v*.*.*"
