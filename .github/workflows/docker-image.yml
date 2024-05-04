@@ -5,6 +5,11 @@ on:
   push:
     tags:
       - "v*.*.*"
+    branches:
+      - main
+    paths-ignore:
+      - "**/renovate.json"
+      - ".github/**"
   pull_request:
     paths-ignore:
       - "**/renovate.json"
@@ -22,7 +27,7 @@ env:
 
 jobs:
   build:
-    name: Build and all platforms
+    name: Build all platforms
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository
