@@ -5,6 +5,8 @@ on:
   push:
     tags:
       - "v*.*.*"
+    branches-ignore:
+      - "renovate/**"
   pull_request:
     paths-ignore:
       - "**/renovate.json"
