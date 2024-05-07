@@ -7,6 +7,7 @@ on:
       - "v*.*.*"
     branches-ignore:
       - "renovate/**"
+      - "dev"
     paths-ignore:
       - "**/renovate.json"
       - ".github/**"
@@ -17,8 +18,8 @@ on:
       - "main"
       - "dev"
   workflow_dispatch:
-  schedule:
-    - cron: "0 1 * * 2"
+  # schedule:
+  # - cron: "0 1 * * 2"
 
 env:
   REGISTRY_IMAGE: yfhme/cs-firewall-bouncer-docker
@@ -88,10 +89,7 @@ jobs:
         with:
           images: ${{ env.REGISTRY_IMAGE }}
           tags: |
-            type=schedule,pattern=weekly
-            type=edge,branch=dev
             type=ref,event=branch
-            type=ref,event=pr
             type=semver,pattern={{version}}
 
       - name: Set up QEMU
