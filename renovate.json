@@ -1,25 +1,31 @@
 {
-    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-    "baseBranches": [
-      "dev"
-    ],
-    "prConcurrentLimit": 1,
-    "extends": [
-      "github>yfhme/renovate-config"
-    ],
-    "dependencyDashboard": true,
-    "forkProcessing": "enabled",
-    "minimumReleaseAge": "7 days",
-    "packageRules": [
-      {
-        "matchPackageNames": ["debian"],
-        "versioning": "regex:^bookworm-(?<major>\\d{4})(?<minor>\\d{2})(?<patch>\\d{2})-(?<compatibility>.*)$"
-      },
-      {
-        "description": "Automerge non-major updates",
-        "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
-        "automerge": true,
-        "automergeStrategy": "rebase"
-      }
-    ]
- }
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "baseBranches": ["dev"],
+  "prConcurrentLimit": 1,
+  "extends": ["github>yfhme/renovate-config"],
+  "dependencyDashboard": true,
+  "forkProcessing": "enabled",
+  "minimumReleaseAge": "5 days",
+  "packageRules": [
+    {
+      "matchPackageNames": ["debian"],
+      "versioning": "regex:^bookworm-(?<major>\\d{4})(?<minor>\\d{2})(?<patch>\\d{2})-(?<compatibility>.*)$"
+    },
+    {
+      "description": "Automerge non-major updates",
+      "matchUpdateTypes": ["patch", "pin", "digest"],
+      "automerge": true,
+      "automergeStrategy": "rebase"
+    },
+    {
+      "matchManagers": ["github-actions"],
+      "groupName": "github-actions",
+      "schedule": ["after 10pm and before 5am every Monday"]
+    },
+    {
+      "matchManagers": ["gomod"],
+      "groupName": "gomod",
+      "schedule": ["after 10pm and before 5am every Thursday"]
+    }
+  ]
+}
