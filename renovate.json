@@ -20,12 +20,12 @@
     {
       "matchManagers": ["github-actions"],
       "groupName": "github-actions",
-      "schedule": ["after 10pm and before 5am every Monday"]
+      "schedule": ["* 3 * * 1"]
     },
     {
       "matchManagers": ["gomod"],
       "groupName": "gomod",
-      "schedule": ["after 10pm and before 5am every Thursday"]
+      "schedule": ["* 3 * * 4"]
     }
   ]
 }
