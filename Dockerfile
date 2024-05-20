@@ -5,7 +5,7 @@ ARG TARGETARCH
 ARG BUILD_VERSION=local
 
 # renovate: datasource=github-tags depName=yfhme/y-cs-firewall-bouncer
-ENV FW_BOUNCER_VERSION=v0.0.29-rc1b
+ENV FW_BOUNCER_VERSION=v0.0.29-rc2
 ENV BOUNCER_URL=https://github.com/yfhme/y-cs-firewall-bouncer/releases/download/$FW_BOUNCER_VERSION/crowdsec-firewall-bouncer-linux-$TARGETARCH.tgz 
 
 COPY crowdsec-firewall-bouncer-linux-$TARGETARCH.tgz /tmp/src/
