@@ -5,7 +5,7 @@
   "extends": ["github>yfhme/renovate-config"],
   "dependencyDashboard": true,
   "forkProcessing": "enabled",
-  "minimumReleaseAge": "5 days",
+  "minimumReleaseAge": "3 days",
   "packageRules": [
     {
       "matchPackageNames": ["debian"],
