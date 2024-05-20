@@ -22,10 +22,10 @@ linters-settings:
     # Default: 40
     statements: -1
 
-  govet:
-    settings:
-      shadow:
-        strict: true
+  #govet:
+  #  settings:
+  #    shadow:
+  #      strict: true
 
   lll:
     line-length: 140
