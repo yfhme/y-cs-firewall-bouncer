@@ -26,7 +26,7 @@ jobs:
 
     steps:
       - name: Check out code into the Go module directory
-        uses: actions/checkout@0ad4b8fadaa221de15dcec353f45205ec38ea70b # v4
+        uses: actions/checkout@a5ac7e51b41094c92402da3b24376905380afc29 # v4
         with:
           fetch-depth: 0
 
@@ -36,7 +36,7 @@ jobs:
           go-version: '1.22.3'
 
       - name: Initialize CodeQL
-        uses: github/codeql-action/init@d39d31e687223d841ef683f52467bd88e9b21c14 # v3
+        uses: github/codeql-action/init@9fdb3e49720b44c48891d036bb502feb25684276 # v3
         with:
           languages: go, python
 
@@ -56,4 +56,4 @@ jobs:
           skip-save-cache: true
 
       - name: Perform CodeQL Analysis
-        uses: github/codeql-action/analyze@d39d31e687223d841ef683f52467bd88e9b21c14 # v3
+        uses: github/codeql-action/analyze@9fdb3e49720b44c48891d036bb502feb25684276 # v3
