@@ -33,6 +33,7 @@ Find the [official documentation](https://doc.crowdsec.net/docs/bouncers/firewal
 ## Notes
 - This version uses iptables, so you must have those on your host system
 - Recommend using the `latest` tag or a version number tag e.g. `v0.0.29-rc2`
+- A configuration file must be mounted to `/crowdsec-firewall-bouncer.yaml` as this image does not contain a 'default'
 
 ## Getting Started
 
