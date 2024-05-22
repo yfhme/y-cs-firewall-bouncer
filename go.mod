@@ -5,14 +5,14 @@ go 1.21
 require (
 	github.com/crowdsecurity/crowdsec v1.6.1
 	github.com/crowdsecurity/go-cs-bouncer v0.0.13
-	github.com/crowdsecurity/go-cs-lib v0.0.10
+	github.com/crowdsecurity/go-cs-lib v0.0.11
 	github.com/google/nftables v0.2.0
-	github.com/prometheus/client_golang v1.19.0
+	github.com/prometheus/client_golang v1.19.1
 	github.com/sirupsen/logrus v1.9.3
 	github.com/stretchr/testify v1.9.0
-	golang.org/x/exp v0.0.0-20240416160154-fe59bbe5cc7f
+	golang.org/x/exp v0.0.0-20240506185415-9bf2ced13842
 	golang.org/x/sync v0.7.0
-	golang.org/x/sys v0.19.0
+	golang.org/x/sys v0.20.0
 	gopkg.in/natefinch/lumberjack.v2 v2.2.1
 	gopkg.in/yaml.v2 v2.4.0
 	gopkg.in/yaml.v3 v3.0.1
