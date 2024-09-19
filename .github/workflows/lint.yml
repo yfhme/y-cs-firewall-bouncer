@@ -47,24 +47,13 @@ jobs:
       - name: golangci-lint
         uses: golangci/golangci-lint-action@aaa42aa0628b4ae2578232a66b541047968fac86 # v6
         with:
-          version: 'v1.58.2'
+          version: v1.59
           args: --issues-exit-code=1 --timeout 10m
           only-new-issues: false
           # the cache is already managed above, enabling it here
           # gives errors when extracting
-          skip-cache: true
-          skip-save-cache: true
+          skip-pkg-cache: true
+          skip-build-cache: true
 
-    - name: golangci-lint
-      uses: golangci/golangci-lint-action@aaa42aa0628b4ae2578232a66b541047968fac86 # v6
-      with:
-        version: v1.59
-        args: --issues-exit-code=1 --timeout 10m
-        only-new-issues: false
-        # the cache is already managed above, enabling it here
-        # gives errors when extracting
-        skip-pkg-cache: true
-        skip-build-cache: true
-
-    - name: Perform CodeQL Analysis
-      uses: github/codeql-action/analyze@64431c66d0e98a26d34f9485e5f8e317e14956fc
+      - name: Perform CodeQL Analysis
+        uses: github/codeql-action/analyze@64431c66d0e98a26d34f9485e5f8e317e14956fc
