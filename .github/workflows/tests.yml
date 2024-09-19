@@ -36,11 +36,21 @@ jobs:
       - name: Set up Go
         uses: actions/setup-go@0a12ed9d6a96ab950c8f026ed9f722fe0da7ef32 # v5
         with:
-          go-version: '1.22.5'
+          go-version: "1.22.5"
 
       - name: Build
         run: |
           make build
+
+      - name: Set up Go
+        uses: actions/setup-go@0a12ed9d6a96ab950c8f026ed9f722fe0da7ef32 # v5
+        with:
+          go-version: "1.22"
+
+      - name: mod tidy
+        run: |
+          go mod tidy
+          git diff
 
       - name: Run unit tests
         run: |
