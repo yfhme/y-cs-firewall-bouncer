@@ -69,4 +69,4 @@ jobs:
         skip-build-cache: true
 
     - name: Perform CodeQL Analysis
-      uses: github/codeql-action/analyze@9c646c24a4c8410122b0d6a1311088e9377eea95
+      uses: github/codeql-action/analyze@64431c66d0e98a26d34f9485e5f8e317e14956fc
