@@ -34,4 +34,4 @@ RUN set -x && \
   /var/tmp/* \
   /var/lib/apt/lists/*
 
-ENTRYPOINT crowdsec-firewall-bouncer -c /crowdsec-firewall-bouncer.yaml
+ENTRYPOINT ["crowdsec-firewall-bouncer", "-c", "/crowdsec-firewall-bouncer.yaml"]
