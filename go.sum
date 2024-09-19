@@ -10,10 +10,16 @@ github.com/coreos/go-systemd/v22 v22.5.0 h1:RrqgGjYQKalulkV8NGVIfkXQf6YYmOyiJKk8
 github.com/coreos/go-systemd/v22 v22.5.0/go.mod h1:Y58oyj3AT4RCenI/lSvhwexgC+NSVTIJ3seZv2GcEnc=
 github.com/crowdsecurity/crowdsec v1.6.3-rc3 h1:Hlb4CIHI7oB6DptjhTjdLZXBiWgm5ufCFdekIEnKh+A=
 github.com/crowdsecurity/crowdsec v1.6.3-rc3/go.mod h1:o1M2A0sNqch8D5RwiXpmiLj5JPznZGwTFalXskXhkPY=
+github.com/crowdsecurity/crowdsec v1.6.3 h1:L/6iT2/Gfl9bc9DQkHJz2BbpKM3P+yW6ocCKRyF4j1g=
+github.com/crowdsecurity/crowdsec v1.6.3/go.mod h1:LrdAX9l4vgaExQbNUVnvZIu/DPwD9pSE9gBj14D4MTo=
 github.com/crowdsecurity/go-cs-bouncer v0.0.14-0.20240819095913-4521d8ddc0c6 h1:fLJyC+uzlUEufSg9vBPHNZ74X9y4pWvE/877DLjDK2o=
 github.com/crowdsecurity/go-cs-bouncer v0.0.14-0.20240819095913-4521d8ddc0c6/go.mod h1:qnxo6SrLoU3BwU+v9vKDosVHQnhoNDGss37wseoGhRk=
+github.com/crowdsecurity/go-cs-bouncer v0.0.14-0.20240820122010-44257d6b0683 h1:7FSZj0AQxQVQTadT88Q0/iBlf4+mOASrgvkj5RS/sP0=
+github.com/crowdsecurity/go-cs-bouncer v0.0.14-0.20240820122010-44257d6b0683/go.mod h1:qnxo6SrLoU3BwU+v9vKDosVHQnhoNDGss37wseoGhRk=
 github.com/crowdsecurity/go-cs-lib v0.0.13 h1:asmtjIEPOibUK8eaYQCIR7XIBU/EX5vyAp1EbKFQJtY=
 github.com/crowdsecurity/go-cs-lib v0.0.13/go.mod h1:ePyQyJBxp1W/1bq4YpVAilnLSz7HkzmtI7TRhX187EU=
+github.com/crowdsecurity/go-cs-lib v0.0.15 h1:zNWqOPVLHgKUstlr6clom9d66S0eIIW66jQG3Y7FEvo=
+github.com/crowdsecurity/go-cs-lib v0.0.15/go.mod h1:ePyQyJBxp1W/1bq4YpVAilnLSz7HkzmtI7TRhX187EU=
 github.com/davecgh/go-spew v1.1.0/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/davecgh/go-spew v1.1.1 h1:vj9j/u1bqnvCEfJOwUhtlOARqs3+rkHYY13jYWTU97c=
 github.com/davecgh/go-spew v1.1.1/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
@@ -98,6 +104,8 @@ github.com/pmezard/go-difflib v1.0.0 h1:4DBwDE0NGyQoBHbLQYPwSUPoCMWR5BEzIk/f1lZb
 github.com/pmezard/go-difflib v1.0.0/go.mod h1:iKH77koFhYxTK1pcRnkKkqfTogsbg7gZNVY4sRDYZ/4=
 github.com/prometheus/client_golang v1.20.0 h1:jBzTZ7B099Rg24tny+qngoynol8LtVYlA2bqx3vEloI=
 github.com/prometheus/client_golang v1.20.0/go.mod h1:PIEt8X02hGcP8JWbeHyeZ53Y/jReSnHgO035n//V5WE=
+github.com/prometheus/client_golang v1.20.4 h1:Tgh3Yr67PaOv/uTqloMsCEdeuFTatm5zIq5+qNN23vI=
+github.com/prometheus/client_golang v1.20.4/go.mod h1:PIEt8X02hGcP8JWbeHyeZ53Y/jReSnHgO035n//V5WE=
 github.com/prometheus/client_model v0.6.1 h1:ZKSh/rekM+n3CeS952MLRAdFwIKqeY8b62p8ais2e9E=
 github.com/prometheus/client_model v0.6.1/go.mod h1:OrxVMOVHjw3lKMa8+x6HeMGkHMQyHDk9E3jmP2AmGiY=
 github.com/prometheus/common v0.55.0 h1:KEi6DK7lXW/m7Ig5i47x0vRzuBsHuvJdi5ee6Y3G1dc=
@@ -127,6 +135,8 @@ golang.org/x/sys v0.0.0-20220811171246-fbc7d0a398ab/go.mod h1:oPkhp1MJrh7nUepCBc
 golang.org/x/sys v0.6.0/go.mod h1:oPkhp1MJrh7nUepCBck5+mAzfO9JrbApNNgaTdGDITg=
 golang.org/x/sys v0.24.0 h1:Twjiwq9dn6R1fQcyiK+wQyHWfaz/BJB+YIpzU/Cv3Xg=
 golang.org/x/sys v0.24.0/go.mod h1:/VUhepiaJMQUp4+oa/7Zr1D23ma6VTLIYjOOTFZPUcA=
+golang.org/x/sys v0.25.0 h1:r+8e+loiHxRqhXVl6ML1nO3l1+oFoWbnlu2Ehimmi34=
+golang.org/x/sys v0.25.0/go.mod h1:/VUhepiaJMQUp4+oa/7Zr1D23ma6VTLIYjOOTFZPUcA=
 golang.org/x/text v0.17.0 h1:XtiM5bkSOt+ewxlOE/aE/AKEHibwj/6gvWMl9Rsh0Qc=
 golang.org/x/text v0.17.0/go.mod h1:BuEKDfySbSR4drPmRPG/7iBdf8hvFMuRexcpahXilzY=
 golang.org/x/xerrors v0.0.0-20191204190536-9bdfabe68543/go.mod h1:I/5z698sn9Ka8TeJc9MKroUUfqBBauWjQqLJ2OPfmY0=
