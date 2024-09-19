@@ -3,16 +3,16 @@ module github.com/crowdsecurity/cs-firewall-bouncer
 go 1.22
 
 require (
-	github.com/crowdsecurity/crowdsec v1.6.3-rc3
-	github.com/crowdsecurity/go-cs-bouncer v0.0.14-0.20240819095913-4521d8ddc0c6
-	github.com/crowdsecurity/go-cs-lib v0.0.13
+	github.com/crowdsecurity/crowdsec v1.6.3
+	github.com/crowdsecurity/go-cs-bouncer v0.0.14-0.20240820122010-44257d6b0683
+	github.com/crowdsecurity/go-cs-lib v0.0.15
 	github.com/google/nftables v0.2.0
-	github.com/prometheus/client_golang v1.20.0
+	github.com/prometheus/client_golang v1.20.4
 	github.com/prometheus/client_model v0.6.1
 	github.com/sirupsen/logrus v1.9.3
 	github.com/stretchr/testify v1.9.0
 	golang.org/x/sync v0.8.0
-	golang.org/x/sys v0.24.0
+	golang.org/x/sys v0.25.0
 	gopkg.in/natefinch/lumberjack.v2 v2.2.1
 	gopkg.in/yaml.v2 v2.4.0
 	gopkg.in/yaml.v3 v3.0.1
