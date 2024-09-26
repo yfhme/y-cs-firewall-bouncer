@@ -156,7 +156,7 @@ linters:
     # Recommended? (requires some work)
     #
 
-    #- gomnd # An analyzer to detect magic numbers.
+    - mnd # An analyzer to detect magic numbers.
     - ireturn # Accept Interfaces, Return Concrete Types
     - unparam # Reports unused function parameters
 
