@@ -4,7 +4,7 @@ go 1.22
 
 require (
 	github.com/crowdsecurity/crowdsec v1.6.3
-	github.com/crowdsecurity/go-cs-bouncer v0.0.14-0.20240820122010-44257d6b0683
+	github.com/crowdsecurity/go-cs-bouncer v0.0.14
 	github.com/crowdsecurity/go-cs-lib v0.0.15
 	github.com/google/nftables v0.2.0
 	github.com/prometheus/client_golang v1.20.4
