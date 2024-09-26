@@ -177,7 +177,7 @@ linters:
     - gocognit # Computes and checks the cognitive complexity of functions
     - gocyclo # Computes and checks the cyclomatic complexity of functions
     - godox # Tool for detection of FIXME, TODO and other comment keywords
-    - goerr113 # Golang linter to check the errors handling expressions
+    - err113 # Golang linter to check the errors handling expressions # renamed from goerr113
     - maintidx # maintidx measures the maintainability index of each function.
     - nestif # Reports deeply nested if statements
     - paralleltest # paralleltest detects missing usage of t.Parallel() method in your Go test

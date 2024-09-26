@@ -52,8 +52,7 @@ jobs:
           only-new-issues: false
           # the cache is already managed above, enabling it here
           # gives errors when extracting
-          skip-pkg-cache: true
-          skip-build-cache: true
+          skip-cache: true
 
       - name: Perform CodeQL Analysis
         uses: github/codeql-action/analyze@64431c66d0e98a26d34f9485e5f8e317e14956fc
